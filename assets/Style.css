@@ -193,6 +193,25 @@ i {
   height: 100vh;
 }
 
+.carousel-inner {
+  height: 80%;
+  width: 50%;
+
+}
+
+.carousel-item {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+
+}
+
+.carousel-item img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
 /* -------------------------------------------------------------- Contact-Section ------------------------------------------------------------------------- */
 .contact {
   background-color: rgb(0, 0, 0);
