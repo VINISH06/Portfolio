@@ -171,9 +171,13 @@ section {
 
 }
 
-.row i {
+i {
   cursor: pointer;
   color: var(--second-color);
+}
+
+.row i {
+
   margin: 15px;
   display: flex;
 
