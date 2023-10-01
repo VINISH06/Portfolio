@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* -------------------------------------------------------------- Variables ------------------------------------------------------------------------- */
+:root {
+  --header-height: 3rem;
+  --font-weight: 600;
+  --font-size: 20px;
+}
+
+/* -------------------------------------------------------------- Colors ------------------------------------------------------------------------- */
+:root {
+  --first-color: rgb(0, 0, 0, 0.5);
+  --second-color: rgb(185, 0, 192);
+
+  --second-shadow-color: rgb(185, 0, 192, 0.7);
+}
+
+/* -------------------------------------------------------------- Font-Style ------------------------------------------------------------------------- */
+:root {
+  --body-font: "Poppins", sans-serif;
+  --index: 10;
+}
+
+/* -------------------------------------------------------------- MediaQuery ------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1000px) {
+  #container-fluid {
+    flex-direction: column;
+  }
+
+  #container-fluid h1 {
+    padding-top: 20%;
+    font-size: 50px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .skills {
+    padding: 10%;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .cnt {
+    flex-direction: column;
+  }
+
+
+
+
+
+
+}
+
+/* -------------------------------------------------------------- Base ------------------------------------------------------------------------- */
+
+* {
+  font-family: var(--body-font);
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+/* -------------------------------------------------------------- Navbar ------------------------------------------------------------------------- */
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 5px 8px var(--first-color);
+}
+
+.display-4 {
+  font-weight: var(--font-weight);
+  color: var(--second-color);
+}
+
+.nav-item {
+  color: white !important;
+  border-bottom: 4px solid transparent;
+}
+
+.nav-item:hover {
+  border-bottom: 4px solid var(--second-color);
+}
+
+/* -------------------------------------------------------------- Sections ------------------------------------------------------------------------- */
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  transition: 0.5s;
+  padding-top: 10%;
+}
+
+#container-fluid {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+
+/* --------------------------------------------------------------------Home Sections----------------------------------- */
+#home {
+  background-color: var(--second-color);
+
+}
+
+.cnt {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.cnt div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+
+.text {
+  text-align: center;
+  align-items: center;
+  display: flex;
+
+  justify-content: center;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(5px 5px 5px black);
+  object-fit: contain;
+
+}
+
+.name {
+  color: white;
+  font-weight: 700;
+}
+
+/* -------------------------------------------------------------- About-Section ------------------------------------------------------------------------- */
+
+
+
+.media {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------- Skills-Section ------------------------------------------------------------------------- */
+.skills {
+  background-color: rgb(0, 0, 0);
+  box-shadow: -5px 5px 8px var(--first-color);
+  width: 100%;
+}
+
+i {
+  cursor: pointer;
+  color: var(--second-color);
+}
+
+.row i {
+
+  margin: 15px;
+  display: flex;
+
+}
+
+/* -------------------------------------------------------------- Project-Section ------------------------------------------------------------------------- */
+
+
+.carousel {
+  background-color: var(--second-color);
+  box-shadow: 0px 5px 8px var(--first-color);
+  width: 100%;
+  height: 100vh;
+}
+
+/* -------------------------------------------------------------- Contact-Section ------------------------------------------------------------------------- */
+.contact {
+  background-color: rgb(0, 0, 0);
+  box-shadow: -5px 5px 8px var(--first-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact button {
+  margin: 10%;
+}
+
+/* -------------------------------------------------------------- Footer-Section ------------------------------------------------------------------------- */
+footer {
+  background-color: var(--second-color);
+  text-align: center;
+  min-height: 70px;
+  width: 100%;
+}
