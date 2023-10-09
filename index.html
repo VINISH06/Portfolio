@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Vinish-Portfolio</title>
   <!-- Stylesheet -->
   <link href="./assets/Style.css" type="Text/Css" rel="Stylesheet" />
@@ -17,12 +16,14 @@
   <!-- Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
-
 <body>
   <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+     <img src="./assets/img/logo.ico" class="img-fluid rounded-circle" id="logo" width="100px" height="100px">
+        </a>
         <a class="navbar-brand" href="#">
           <h1 class="display-4">Portfolio</h1>
         </a>
@@ -43,82 +44,64 @@
     </nav>
   </header>
   <!-- --------------------------------------------------------------------------------------------------------- -->
-
   <!-- home -->
   <section id="home">
     <div class="container-fluid">
       <div class="cnt">
         <div class="text">
-
-          <h1 class="display-2">Hi,<br>Im <span class="name" data-aos="fade-left">S.Vinish</span><br>
-            <span class="role" data-aos="fade-right" data-aos-duration="4000">Java Developer </span>
+          <h1 class="display-2">Hi,<br>Im <span class="fw-bold text-white" data-aos="fade-left">Vinish</span><br>
+            <span class="fw-bold" data-aos="fade-right" data-aos-duration="4000">Jr.Java Developer </span>
           </h1>
         </div>
-
-
         <div class="log">
-          <img src="./assets/img/logo.png" alt="logo" data-aos="fade-left" data-aos-anchor="#example-anchor"
-            data-aos-offset="500" data-aos-duration="500" class="img">
+          <img src="./assets/img/profile.png" alt="logo" data-aos="fade-left" data-aos-anchor="#example-anchor"
+            data-aos-offset="500" data-aos-duration="500" class="img-fluid" width="500px" height="500px">
         </div>
       </div>
-
-
     </div>
   </section>
-
   <!-- ----------------------------------------------------------------------------------------------------------- -->
   <!-- about -->
   <section id="about">
+    <h1 class="display-3 text-center text-uppercase fw-normal">About</h1>
     <div class="container-fluid" id="container-fluid">
-      <img src="./assets/img/Online page-amico.svg" data-aos="fade-up" data-aos-anchor-placement="top-center"
+      <img src="./assets/img/About-pic.svg" data-aos="fade-up" data-aos-anchor-placement="top-center"
         class="col-lg-6" />
       <div class="cnt1" data-aos="fade-up" data-aos-duration="1000">
-        <div>
-          <h1 class="display-2">About</h1>
-          <p class="text-center p-lg-5 p-0 ">
+        <div>  
+        <img src="./assets/img/profile pic.jpg" alt="profile" class="img-fluid rounded-circle shadow" width="250px" height="250px">      
+          <p class="text-center text-dark fs-3 text  sm-fs-5 text pt-5">
             As a passionate and dedicated individual entering the world of IT, I
             am wholeheartedly committed to pursuing a career in Full Stack
             Development. With a Bachelor's degree in English and a burning
             desire to learn and innovate, I bring a unique perspective to the
             field. My journey in web development has equipped me with a diverse
             set of skills that I am eager to apply to real-world projects.
-
-
           </p>
         </div>
-
-
         <div class="media">
-          <a href="https://github.com/VINISH06"><i class="fa-brands fa-github fa-2x" data-aos="flip-left"
+          <a href="https://github.com/VINISH06" class=""><i class="fa-brands fa-github fa-3x" data-aos="flip-left"
               data-aos-duration="1000"></i></a>
-          <a href="https://www.linkedin.com/in/vinish-s-4b5966269/"><i class="fa-brands fa-linkedin fa-2x"
+          <a href="https://www.linkedin.com/in/vinish-s-4b5966269/" class=""><i class="fa-brands fa-linkedin fa-3x"
               data-aos="flip-left" data-aos-duration="1000"></i></a>
-          <a href="#" class="email"><i class="fa-solid fa-envelope fa-2x" data-aos="flip-left"
+          <a href="#"  class=""><i class="fa-solid fa-envelope fa-3x" data-aos="flip-left"
               data-aos-duration="1000"></i></a>
-
         </div>
       </div>
-
-
     </div>
   </section>
-
   <!-- ------------------------------------------------------------------------------------------------------------- -->
   <!-- skills -->
   <section id="skills">
-
-    <div class="container-fluid" data-aos="fade-up" id="container-fluid">
-
-      <div class="skills">
-        <div class="row ">
-          <h1 class="text-center display-4 text-white ">Skills</h1>
-        </div>
-        <div class="row p-0 mb-g-3 mb-0 p-lg-2">
+    <h1 class="text-center display-3 text-uppercase fw-normal ">Skills</h1>
+    <div class=" container bg-dark rounded shadow " data-aos="fade-up" id="container-fluid">
+      <div class="skills ">
+        <div class="row p-lg-2 p-sm-6">
           <div class="col-lg-6 col-12">
             <i class="fa-brands fa-html5 fa-3x" data-aos="flip-left" data-aos-duration="1000"></i><span
               class="text-white">Html</span>
             <div class="progress">
-              <div class="progress-bar progress-bar-animated bg-success progress-bar-striped" style="width: 95%">
+              <div class="progress-bar progress-bar-animated bg-primary" style="width: 95%">
                 95%
               </div>
             </div>
@@ -127,46 +110,45 @@
             <i class="fa-brands fa-css3-alt fa-3x" data-aos="flip-left" data-aos-duration="1000"></i><span
               class="text-white ">Css</span>
             <div class="progress">
-              <div class="progress-bar progress-bar-animated bg-success progress-bar-striped" style="width: 90%">
+              <div    class="progress-bar progress-bar-animated bg-primary" style="width: 90%">
                 90%
               </div>
             </div>
           </div>
         </div>
         <!-- ----------------------------------------row-2-------------------------------------------------------------------- -->
-        <div class="row p-0 mb-g-3 mb-0 p-lg-2">
+        <div class="row  p-lg-2">
           <div class="col-lg-6 col-12">
             <i class="fa-brands fa-bootstrap fa-3x" data-aos="flip-left"></i><span class="text-white">Bootstrap</span>
-
             <div class="progress">
-              <div class="progress-bar progress-bar-animated bg-success progress-bar-striped" style="width: 80%">
-                80%
+              <div class="progress-bar progress-bar-animated bg-primary" style="width: 90%">
+                90%
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-12">
             <i class="fa-brands fa-square-js fa-3x" data-aos="flip-left"></i><span class="text-white">JavaScript</span>
             <div class="progress">
-              <div class="progress-bar progress-bar-animated bg-success progress-bar-striped" style="width: 80%">
-                80%
+              <div class="progress-bar progress-bar-animated bg-primary" style="width: 85%">
+                85%
               </div>
             </div>
           </div>
         </div>
         <!-- ----------------------------------------row-3-------------------------------------------------------------------- -->
-        <div class="row  p-0 mb-g-3 mb-0 p-lg-2">
+        <div class="row  p-lg-2">
           <div class="col-lg-6 col-12">
             <i class="fa-brands fa-java fa-3x" data-aos="flip-left"></i><span class="text-white">Java</span>
             <div class="progress">
-              <div class="progress-bar progress-bar-animated bg-success progress-bar-striped " style="width: 85%">
-                85%
+              <div class="progress-bar progress-bar-animated bg-primary " style="width: 90%">
+                90%
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-12">
             <i class="fa-solid fa-database fa-3x" data-aos="flip-left"></i><span class="text-white">Sql</span>
             <div class="progress">
-              <div class="progress-bar progress-bar-animated bg-success progress-bar-striped" style="width: 85%">
+              <div class="progress-bar progress-bar-animated bg-primary" style="width: 85%">
                 85%
               </div>
             </div>
@@ -178,127 +160,110 @@
   <!-- ------------------------------------------------------------------------------------------------------------- -->
   <!-- projects -->
   <section id="projects">
-    <div class="container-fluid" id="container-fluid">
-
-
-      <!-- Carousel -->
-      <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-        <h1 class="text-white display-4 bg-dark p-lg-2 ">Projects</h1>
-
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-        </div>
-
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-
-            <div>
-              <h2> Simple-Calculator</h2>
-            </div>
-            <img src="./assets/img/6982903_3324677.jpg" alt="calc1">
-
-
+    <h1 class="text-center display-3 text-uppercase fw-normal">Projects</h1>
+    <div class="container shadow rounded" data-aos="fade-up" data-aos-duration="1000">
+      <div class="section">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ul>
+              <!-- Slides -->
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="./assets/img/image1.jpg" alt="Image 1" class="img-fluid">
+                      <div class="carousel-caption">
+                          <h3>Slide 1</h3>
+                          <p>Description for Slide 1</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="./assets/img/image2.png" alt="Image 2" class="img-fluid">
+                      <div class="carousel-caption">
+                          <h3>Slide 2</h3>
+                          <p>Description for Slide 2</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="./assets/img/image3.jpg"
+                          alt="Image 3" class="img-fluid">
+                      <div class="carousel-caption">
+                          <h3 class="text-dark display-2">Slide 3</h3>
+                          <p class="text-dark">Description for Slide 3</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Controls -->
+              <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+              </a>
           </div>
-          <div class="carousel-item">
-            <div>
-              <h2> Blood-Bank Management System</h2>
-            </div>
-
-            <img src="./assets/img/9174325_6262.jpg" alt="calc2">
-
-          </div>
-          <div class="carousel-item">
-            <div>
-              <h2> Online-Exam Management System</h2>
-            </div>
-
-            <img src="./assets/img/8706757_3968259.jpg" alt="calc3">
-          </div>
-          <div class="carousel-item">
-            <div>
-              <h2>Text_Editor</h2>
-            </div>
-
-            <img src="./assets/img/Creative writing-amico.png" alt="calc4">
-          </div>
-
-
-        </div>
-
-
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev " type="button" data-bs-target="#demo" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bg-dark
-          "></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-          <span class="carousel-control-next-icon bg-dark"></span>
-        </button>
       </div>
-    </div>
-
+  </div>
   </section>
   <!-- ----------------------------------------------------------------------------------------------------------- -->
   <!-- contact -->
   <section id="contact">
-    <div class="container-fluid " data-aos="fade-up" data-aos-duration="1000" id="container-fluid">
-
-
-      <div class="contact">
-
-        <div class="details">
-          <h1 class="text-white display-2">Contact:</h1>
-          <img src="./assets/img/Get in touch-bro.svg " alt="contact">
-
+    <h1 class="text-center display-3 text-uppercase fw-normal">Contact</h1>
+    <div class="container shadow bg-dark rounded" data-aos="fade-up" data-aos-duration="1000" id="container-fluid">
+      <div class="contact ">
+        <div class="cont1">
+          <h2 class="text-white display-3">Resume:</h2>
+          <img src="./assets/img/Contact.svg "class="img-fluid" alt="contact">
           <div><button type="submit" class="btn btn-danger "><a
                 href="./assets/img/SvinishCv.docx">Download_Cv</a></button>
           </div>
-
         </div>
-        <div class="form">
+ 
           <form>
-            <h1 class="text-white display-2">Message:</h1>
+            <h2 class="text-white display-3">Message:</h2>
             <div class="mb-3 mt-3">
-
               <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
             </div>
             <div class="mb-3">
-
               <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
             </div>
-
-            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Type here..."></textarea>
+            <textarea class="form-control" rows="4" id="comment" name="text" placeholder="Type here..."></textarea>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
-
-
-        </div>
+    
       </div>
     </div>
     </div>
   </section>
   <!-- ---------------------------------------------------------------------------------------------------------- -->
-
   <!-- footer -->
-  <footer>
-    <h3>S.Vinish</h3>
-    <h4>&copy; 2023 All rights reserved.</h4>
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 Vinish</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline">
+            <li class="list-inline-item text-white"><a href="#home">Home</a></li>
+            <li class="list-inline-item text-white"><a href="#">Portfolio</a></li>
+            <li class="list-inline-item text-white"><a href="#about">About</a></li>
+            <li class="list-inline-item text-white"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
-
-  <!-- script -->
+  <!-- script---------------------------------------------------------------------------------------------- -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
