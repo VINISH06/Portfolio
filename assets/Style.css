@@ -2,9 +2,10 @@
 
 /* -------------------------------------------------------------- Variables ------------------------------------------------------------------------- */
 :root {
-  --header-height: 3rem;
   --font-weight: 600;
   --font-size: 20px;
+  --width: 100%;
+  --height: 100vh;
 }
 
 /* -------------------------------------------------------------- Colors ------------------------------------------------------------------------- */
@@ -12,6 +13,7 @@
   --first-color: rgb(0, 0, 0, 0.5);
   --second-color: rgb(185, 0, 192);
   --second-shadow-color: rgb(185, 0, 192, 0.7);
+  --gradient: linear-gradient(to right, rgb(185, 0, 192) 10%, #fc00ff 100%);
 }
 
 /* -------------------------------------------------------------- Font-Style ------------------------------------------------------------------------- */
@@ -34,7 +36,7 @@
   .contact {
     flex-direction: column;
   }
-  .cnt {
+  .content {
     flex-direction: column;
   }
   #home {
@@ -44,13 +46,15 @@
 
 /* -------------------------------------------------------------- Base ------------------------------------------------------------------------- */
 body {
-  width: 100%;
-  height: 100vh;
+  width: var(--width);
+  height: var(--height);
   font-family: var(--body-font);
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   transition: 0.1s;
+  background-color: antiquewhite;
 }
 /* -------------------------------------------------------------- Navbar ------------------------------------------------------------------------- */
 
@@ -63,16 +67,15 @@ nav {
   border-bottom: 4px solid transparent;
 }
 .nav-item:hover {
-  border-bottom: 4px solid var(--second-color);
+  border-bottom: 3px solid var(--second-color);
+  color: #fc00ff !important;
 }
-.display-4 {
-  font-weight: var(--font-weight);
-}
+
 /* -------------------------------------------------------------- Sections ------------------------------------------------------------------------- */
 
 section {
-  width: 100%;
-  min-height: 100vh;
+  width: var(--width);
+  min-height: var(--height);
   transition: 0.1s;
   padding-top: 10%;
 }
@@ -85,9 +88,11 @@ section {
 
 /* --------------------------------------------------------------------Home Sections----------------------------------- */
 #home {
-  background-image: linear-gradient(to right, rgb(185, 0, 192) 0%, #fc00ff 100%);
+  background-image: var(--gradient);
 }
-
+header h1 {
+  color: #fc00ff;
+}
 #logo {
   transition: 0.1s;
 }
@@ -95,7 +100,7 @@ section {
   transform: rotate(360deg) translateZ(0);
   transition: 0.1s;
 }
-.cnt {
+.content {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -110,19 +115,21 @@ section {
   display: flex;
   justify-content: center;
 }
-
+.log {
+  background-color: var(--first-color);
+}
 /* -------------------------------------------------------------- About-Section ------------------------------------------------------------------------- */
 
 .media {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 /* -------------------------------------------------------------- Skills-Section ------------------------------------------------------------------------- */
 .skills {
-  width: 100%;
+  width: var(--width);
+  padding: 50px !important;
 }
 
 i {
@@ -136,9 +143,7 @@ i {
   align-items: center;
   justify-content: center;
 }
-.skills {
-  padding: 50px !important;
-}
+
 /* -------------------------------------------------------------- Project-Section ------------------------------------------------------------------------- */
 
 .carousel {
@@ -152,7 +157,7 @@ i {
 
 /* -------------------------------------------------------------- Contact-Section ------------------------------------------------------------------------- */
 .contact {
-  width: 100%;
+  width: var(--width);
   height: auto;
   display: flex;
   align-items: center;
