@@ -24,26 +24,6 @@
 
 /* -------------------------------------------------------------- MediaQuery ------------------------------------------------------------------------- */
 
-@media screen and (max-width: 1024px) {
-  #container-fluid {
-    flex-direction: column;
-  }
-
-  #container-fluid h1 {
-    padding-top: 20%;
-    font-size: 50px;
-  }
-  .contact {
-    flex-direction: column;
-  }
-  .content {
-    flex-direction: column;
-  }
-  #home {
-    padding: 15%;
-  }
-}
-
 /* -------------------------------------------------------------- Base ------------------------------------------------------------------------- */
 body {
   width: var(--width);
@@ -78,6 +58,7 @@ section {
   min-height: var(--height);
   transition: 0.1s;
   padding-top: 10%;
+  transition: 0.1s;
 }
 
 #container-fluid {
@@ -109,15 +90,6 @@ header h1 {
   height: 100vh;
 }
 
-.text {
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.log {
-  background-color: var(--first-color);
-}
 /* -------------------------------------------------------------- About-Section ------------------------------------------------------------------------- */
 
 .media {
@@ -131,13 +103,11 @@ header h1 {
   width: var(--width);
   padding: 50px !important;
 }
-
 i {
   cursor: pointer;
   margin: 15px;
   color: var(--second-color);
 }
-
 .row i {
   display: flex;
   align-items: center;
@@ -145,28 +115,28 @@ i {
 }
 
 /* -------------------------------------------------------------- Project-Section ------------------------------------------------------------------------- */
-
-.carousel {
-  height: 800px;
-}
-.carousel-inner img {
+.slider {
   width: 100%;
-  object-fit: fill;
   height: 800px;
 }
 
+.card img {
+  height: 400px;
+  object-fit: contain;
+}
 /* -------------------------------------------------------------- Contact-Section ------------------------------------------------------------------------- */
 .contact {
   width: var(--width);
-  height: auto;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.contact button {
-  margin: 10%;
+.contact .btn {
   width: 200px;
+  background-color: var(--second-color) !important;
+  margin-top: 30px;
+  border: none;
 }
 
 button a {
@@ -177,5 +147,4 @@ button a {
 /* -------------------------------------------------------------- Footer-Section ------------------------------------------------------------------------- */
 footer a {
   text-decoration: none;
-  color: white;
 }
