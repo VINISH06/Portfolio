@@ -70,6 +70,9 @@ section {
 /* --------------------------------------------------------------------Home Sections----------------------------------- */
 #home {
   background-image: var(--gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 header h1 {
   color: #fc00ff;
@@ -80,14 +83,6 @@ header h1 {
 #logo:hover {
   transform: rotate(360deg) translateZ(0);
   transition: 0.1s;
-}
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  width: 100%;
-  height: 100vh;
 }
 
 /* -------------------------------------------------------------- About-Section ------------------------------------------------------------------------- */
@@ -123,6 +118,12 @@ i {
 .card img {
   height: 400px;
   object-fit: contain;
+}
+.card-body {
+  width: 100%;
+  height: 500px;
+  padding-bottom: 5%;
+  text-align: center;
 }
 /* -------------------------------------------------------------- Contact-Section ------------------------------------------------------------------------- */
 .contact {
