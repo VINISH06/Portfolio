@@ -11,7 +11,7 @@
 /* -------------------------------------------------------------- Colors ------------------------------------------------------------------------- */
 :root {
   --first-color: rgb(0, 0, 0, 0.5);
-  --second-color: rgb(185, 0, 192);
+  --second-color: #b900c0;
   --second-shadow-color: rgb(185, 0, 192, 0.7);
   --gradient: linear-gradient(to right, rgb(185, 0, 192) 10%, #fc00ff 100%);
 }
@@ -72,20 +72,12 @@ section {
 
 /* --------------------------------------------------------------------Home Sections----------------------------------- */
 #home {
-  background-size: 100% 100%;
-  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: repeating-linear-gradient(
-      315deg,
-      #00ffff2e 92%,
-      #073aff00 100%
-    ),
-    repeating-radial-gradient(
-      75% 75% at 238% 218%,
-      #00ffff12 30%,
-      #073aff14 39%
-    ),
-    radial-gradient(99% 99% at 109% 2%, #00c9ffff 0%, #073aff00 100%),
-    radial-gradient(160% 154% at 711px -303px, #2000ffff 0%, #073affff 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(185, 0, 192, 1) 100%
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,8 +117,8 @@ header h1 {
 .media i {
   width: 70px;
   height: 70px;
-  color: black !important;
-  margin-top: 100%;
+  color: white !important;
+  margin-top: 80%;
 }
 /* -------------------------------------------------------------- Skills-Section ------------------------------------------------------------------------- */
 .skills {
