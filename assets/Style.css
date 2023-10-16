@@ -117,17 +117,21 @@ i {
 /* -------------------------------------------------------------- Project-Section ------------------------------------------------------------------------- */
 .slider {
   width: 100%;
+}
+.carousel-item {
   height: 800px;
 }
-
 .card img {
   height: 400px;
+  width: 100%;
   object-fit: contain;
+}
+
+.card-body p {
+  height: 300px;
 }
 .card-body {
   width: 100%;
-  height: 350px;
-  padding-bottom: 5%;
   text-align: center;
 }
 /* -------------------------------------------------------------- Contact-Section ------------------------------------------------------------------------- */
