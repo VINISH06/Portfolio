@@ -51,7 +51,7 @@ nav {
 }
 .nav-item:hover {
   border-bottom: 3px solid var(--second-color);
-  color: #fc00ff !important;
+  color: var(--second-color) !important;
 }
 
 /* -------------------------------------------------------------- Sections ------------------------------------------------------------------------- */
@@ -85,7 +85,7 @@ section {
   border-radius: 0px 0px 30px 30px;
 }
 header h1 {
-  color: #fc00ff;
+  color: var(--second-color);
 }
 #logo {
   transition: 0.1s;
@@ -103,6 +103,10 @@ header h1 {
   background-color: var(--second-color);
   border: none;
 }
+#home button:hover {
+  background-color: black;
+  transition: 0.1s;
+}
 #home h1 {
   font-size: 35px;
 }
@@ -115,8 +119,6 @@ header h1 {
   align-items: center;
 }
 .media i {
-  width: 70px;
-  height: 70px;
   color: white !important;
   margin-top: 80%;
 }
@@ -171,7 +173,10 @@ i {
   border: none;
   margin-bottom: 5%;
 }
-
+.contact .btn:hover {
+  background-color: black !important;
+  transition: 0.1s;
+}
 button a {
   text-decoration: none !important;
   color: white;
