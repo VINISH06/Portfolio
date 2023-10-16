@@ -87,7 +87,9 @@ header h1 {
   transform: rotate(360deg) translateZ(0);
   transition: 0.1s;
 }
-
+.text {
+  text-align: center;
+}
 /* -------------------------------------------------------------- About-Section ------------------------------------------------------------------------- */
 
 .media {
