@@ -75,7 +75,7 @@ section {
   background: rgb(2, 0, 36);
   background: linear-gradient(
     0deg,
-    rgba(2, 0, 36, 1) 0%,
+    rgba(2, 0, 36, 0.8987590885963761) 0%,
     rgba(185, 0, 192, 1) 100%
   );
   display: flex;
@@ -104,7 +104,7 @@ header h1 {
   border: none;
 }
 #home h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
 /* -------------------------------------------------------------- About-Section ------------------------------------------------------------------------- */
 

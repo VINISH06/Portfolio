@@ -1,6 +1,6 @@
-var typed = new typed(".fw-bold", {
-  Strings: ["Jr Full-Stack Developer", "Jr WebDeveloper", "Jr Java Developer"],
-  typeSpeed: 150,
-  backSpeed: 150,
-  looped: true,
+const btn = document.getElementById("Cv").addEventListener("click", () => {
+  let link = document.createElement("a");
+  link.href = "assets/ResumeVinish.pdf";
+  link.download = "ResumeVinish.pdf";
+  link.click();
 });
