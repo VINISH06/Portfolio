@@ -70,12 +70,9 @@ section {
 
 /* --------------------------------------------------------------------Home Sections----------------------------------- */
 #home {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    0deg,
-    rgba(2, 0, 36, 0.7) 0%,
-    rgba(185, 0, 192, 1) 100%
-  );
+  background: #b900c0;
+  background: -webkit-radial-gradient(circle, #b900c0 0%, #000000 100%);
+  background: radial-gradient(circle, #b900c0 0%, #000000 100%);
   display: flex;
   flex-direction: column;
   align-items: center;

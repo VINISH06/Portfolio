@@ -33,3 +33,9 @@ setInterval(updateTime, 1000); // Update the time every second
 
 // Initial call to display time immediately
 updateTime();
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+window.addEventListener("load", function () {
+  // Page has fully loaded; hide the loader
+  document.querySelector(".spinner1").style.display = "none";
+});
