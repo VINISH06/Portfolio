@@ -1,19 +1,35 @@
+// for download cv button
+
 const btn = document.getElementById("Cv").addEventListener("click", () => {
   let link = document.createElement("a");
-  link.href = "assets/ResumeVinish_15_10_2023.pdf";
+  link.href = "assets/Vinish.pdf";
   link.download = "ResumeVinish.pdf";
   link.click();
 });
+
+// for clock
+
 function updateTime() {
-  const date = new Date();
-  const hours = date.getHours().toString().padStart(2, "0");
-  const minutes = date.getMinutes().toString().padStart(2, "0");
-  const seconds = date.getSeconds().toString().padStart(2, "0");
-  document.getElementById(
-    "Time"
-  ).textContent = `${hours}:${minutes}:${seconds}`;
+  const now = new Date();
+  let hours = now.getHours();
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  const seconds = now.getSeconds().toString().padStart(2, "0");
+  const ampm = hours >= 12 ? "PM" : "AM";
+
+  // Convert to 12-hour time format and handle midnight (12 AM)
+  if (hours > 12) {
+    hours -= 12;
+  } else if (hours === 0) {
+    hours = 12;
+  }
+
+  hours = hours.toString().padStart(2, "0");
+
+  const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+  document.getElementById("Time").textContent = timeString;
 }
-setInterval(updateTime, 1000);
+
+setInterval(updateTime, 1000); // Update the time every second
+
+// Initial call to display time immediately
 updateTime();
-
-
