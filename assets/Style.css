@@ -22,10 +22,13 @@
   --index: 10;
 }
 
-/* -------------------------------------------------------------- MediaQuery ------------------------------------------------------------------------- */
+/* -------------------------------------------------------------- Universal ------------------------------------------------------------------------- */
 * {
   scroll-behavior: smooth;
   transition: 0.1s;
+}
+* p {
+  font-size: var(--font-size);
 }
 /* -------------------------------------------------------------- Base ------------------------------------------------------------------------- */
 body {
@@ -35,7 +38,6 @@ body {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  scroll-behavior: smooth;
   transition: 0.1s;
   background-color: #b6a6b5;
 }
@@ -53,7 +55,9 @@ nav {
   border-bottom: 3px solid var(--second-color);
   color: var(--second-color) !important;
 }
-
+header h1 {
+  color: var(--second-color);
+}
 /* -------------------------------------------------------------- Sections ------------------------------------------------------------------------- */
 
 section {
@@ -62,12 +66,6 @@ section {
   transition: 0.1s;
   padding-top: 10%;
   transition: 0.1s;
-}
-
-#container-fluid {
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 
 /* --------------------------------------------------------------------Home Sections----------------------------------- */
@@ -84,9 +82,7 @@ section {
   justify-content: center;
   border-radius: 0px 0px 30px 30px;
 }
-header h1 {
-  color: var(--second-color);
-}
+
 #logo {
   transition: 0.1s;
 }
@@ -96,8 +92,6 @@ header h1 {
 }
 .text {
   text-align: center;
-
-  margin-bottom: 50px;
 }
 #home button {
   background-color: var(--second-color);
@@ -108,7 +102,7 @@ header h1 {
   transition: 0.1s;
 }
 #home h1 {
-  font-size: 35px;
+  font-size: 30px;
 }
 /* -------------------------------------------------------------- About-Section ------------------------------------------------------------------------- */
 
@@ -121,6 +115,11 @@ header h1 {
 .media i {
   color: white !important;
   margin-top: 80%;
+}
+
+#container-fluid {
+  align-items: center;
+  text-align: center;
 }
 /* -------------------------------------------------------------- Skills-Section ------------------------------------------------------------------------- */
 .skills {
@@ -140,14 +139,14 @@ i {
 
 /* -------------------------------------------------------------- Project-Section ------------------------------------------------------------------------- */
 .slider {
-  width: 100%;
+  width: var(--width);
 }
 .carousel-item {
   height: 800px;
 }
 .card img {
   height: 400px;
-  width: 100%;
+  width: var(--width);
   object-fit: contain;
 }
 
@@ -181,6 +180,3 @@ i {
 }
 
 /* -------------------------------------------------------------- Footer-Section ------------------------------------------------------------------------- */
-footer a {
-  text-decoration: none;
-}
