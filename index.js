@@ -24,9 +24,8 @@ function updateTime() {
   }
 
   hours = hours.toString().padStart(2, "0");
-
   const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
-  document.getElementById("Time").textContent = timeString;
+  document.getElementById("Time1").textContent = timeString;
 }
 
 setInterval(updateTime, 1000); // Update the time every second
@@ -34,8 +33,3 @@ setInterval(updateTime, 1000); // Update the time every second
 // Initial call to display time immediately
 updateTime();
 //////////////////////////////////////////////////////////////////////////////////////////////////
-
-window.addEventListener("load", function () {
-  // Page has fully loaded; hide the loader
-  document.querySelector(".spinner1").style.display = "none";
-});

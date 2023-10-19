@@ -43,7 +43,9 @@ body {
 
 nav {
   box-shadow: 0px 5px 8px var(--first-color);
-  z-index: var(--index);
+  width: var(--width);
+  top: 0;
+  left: 0;
 }
 .nav-item {
   color: white !important;
@@ -61,20 +63,10 @@ header h1 {
 section {
   width: var(--width);
   min-height: var(--height);
-  transition: 0.1s;
   padding-top: 10%;
-  transition: 0.1s;
 }
 
 /* --------------------------------------------------------------------Home Sections----------------------------------- */
-#home {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 #logo {
   transition: 0.1s;
 }
@@ -84,6 +76,9 @@ section {
 }
 .text {
   text-align: center;
+  width: 100%;
+  padding: 0;
+  height: 100%;
 }
 #home button {
   background-color: var(--second-color);
@@ -92,9 +87,23 @@ section {
 #home button:hover {
   background-color: black;
   transition: 0.1s;
+  color: var(--second-color);
 }
 #home h1 {
-  font-size: 30px;
+  font-size: 50px;
+  color: var(--second-color);
+}
+.text {
+  align-items: center;
+  justify-content: center;
+}
+#home .container-fluid {
+  height: 100%;
+  padding: 0%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 /* -------------------------------------------------------------- About-Section ------------------------------------------------------------------------- */
 
@@ -182,4 +191,20 @@ i {
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  #home .container-fluid {
+    flex-direction: column;
+    margin-top: 65px;
+    padding: 0%;
+  }
+  .text {
+    height: 200px;
+    margin-top: 60px;
+  }
+  .text h1 {
+    font-size: 35px !important;
+    padding: 0;
+  }
 }
