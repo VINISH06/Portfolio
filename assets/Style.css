@@ -37,7 +37,7 @@ body {
   font-family: var(--body-font);
   margin: 0%;
   padding: 0%;
-  overflow: hidden;
+
   box-sizing: border-box;
   transition: 0.1s;
   background-color: rgb(185, 0, 192, 0.3) !important;
