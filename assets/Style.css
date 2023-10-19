@@ -63,7 +63,7 @@ header h1 {
 section {
   width: var(--width);
   min-height: var(--height);
-  padding-top: 10%;
+  padding-top: 80px;
 }
 
 /* --------------------------------------------------------------------Home Sections----------------------------------- */
@@ -176,8 +176,9 @@ i {
   text-decoration: none !important;
   color: white;
 }
-.contact .btn:hover {
+.btn:hover {
   background-color: black !important;
+  color: #b900c0 !important;
   transition: 0.1s;
 }
 
@@ -185,12 +186,6 @@ i {
 .real-time {
   width: 200px;
   justify-content: space-around;
-}
-.container {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
 }
 
 @media (max-width: 768px) {
