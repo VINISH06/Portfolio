@@ -69,8 +69,11 @@ section {
 /* --------------------------------------------------------------------Home Sections----------------------------------- */
 
 #logo:hover {
-  transform: rotate(360deg) translateZ(0);
+  -webkit-transform: rotate(360deg) translateZ(0);
   transition: 0.1s;
+}
+#logo {
+  -webkit-transition: -webkit-transform 1s;
 }
 .text {
   text-align: center;
