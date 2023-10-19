@@ -29,3 +29,8 @@ const btn = document.getElementById("Cv").addEventListener("click", () => {
   link.download = "ResumeVinish.pdf";
   link.click();
 });
+////loader
+setTimeout(function () {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("content").style.display = "block";
+}, 2000);
