@@ -29,8 +29,23 @@ const btn = document.getElementById("Cv").addEventListener("click", () => {
   link.download = "ResumeVinish.pdf";
   link.click();
 });
-////loader
-setTimeout(function () {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("content").style.display = "block";
-}, 2000);
+function sendMail() {
+  let Details = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.querySelector("#message").value,
+  };
+  const serviceId = "service_opsyz0e";
+  const templateId = "template_68wu46m";
+
+  emailjs
+    .send(serviceId, templateId, Details)
+    .then((res) => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.querySelector("#message").value = "";
+      console.log(res);
+      alert("message sent sucess fully");
+    })
+    .catch((err) => console.log(err));
+}

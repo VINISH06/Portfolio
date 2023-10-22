@@ -15,12 +15,18 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Email -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("2CxD9P5v4QiLJwqg5");
+    })();
+  </script>
 </head>
 
 <body>
-  <div id="loader">
-    <div class="loader-spinner"></div>
-  </div>
+
 
   <!-- Header -->
   <header>
@@ -269,18 +275,18 @@
           <img src="./assets/img/Contact.svg " class="img-fluid" alt="contact">
 
         </div>
-        <form class="col-lg-6 col-md-12">
+        <form class=" message-form   col-lg-6 col-md-12">
           <h2 class="text-white display-3 text-center ">Message:</h2>
           <div class="form-floating mt-3 mb-3">
             <input type="text" class="form-control" id="name" placeholder="Enter password" name="pswd" required>
             <label for="name">Name</label>
           </div>
           <div class="form-floating mb-3 mt-3">
-            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
             <label for="email">Email</label>
           </div>
-          <textarea class="form-control" rows="2" id="comment" name="text" placeholder="Type here..."></textarea>
-          <a href="mailto:svinish006@gmail.com"><button class="btn">Submit</button></a>
+          <textarea class="form-control" rows="2" id="message" placeholder="Type here..."></textarea>
+          <button class="btn" onclick="sendMail()">Submit</button>
         </form>
       </div>
     </div>
